@@ -15,7 +15,7 @@ export default {
     };
   },
   mounted() {
-    console.log(`MOUNTED called, status: ${this.status}`);
+    console.log(`Simple MOUNTED called, status: ${this.status}`);
 
     this.handleMounted();
   },

@@ -21,7 +21,7 @@ export default {
         case 'updateStatus':
           const status = state.status;
 
-          console.log(`Updating to ${status}`);
+          console.log(`Vuex4 - Updating to ${status}`);
 
           // Do whatever makes sense now
           if (status === 'success') {

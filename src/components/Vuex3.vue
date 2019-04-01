@@ -19,7 +19,7 @@ export default {
     this.$store.watch(
       (state, getters) => getters.status,
       (newValue, oldValue) => {
-        console.log(`Updating from ${oldValue} to ${newValue}`);
+        console.log(`Vuex3 - Updating from ${oldValue} to ${newValue}`);
 
         // Do whatever makes sense now
         if (newValue === 'success') {

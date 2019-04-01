@@ -17,7 +17,7 @@ export default {
   computed: mapState(['status']),
   watch: {
     status(newValue, oldValue) {
-      console.log(`Updating from ${oldValue} to ${newValue}`);
+      console.log(`Vuex2 - Updating from ${oldValue} to ${newValue}`);
 
       // Do whatever makes sense now
       if (newValue === 'success') {
