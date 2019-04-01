@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 v-if="status === 'success'">Success</h1>
-    <h1 v-else-if="status === 'error'">Error</h1>
-    <h1 v-else>Loading</h1>
+    <h1 v-if="status === 'success'">App - Success</h1>
+    <h1 v-else-if="status === 'error'">App - Error</h1>
+    <h1 v-else>App - Loading</h1>
     <simple />
     <vuex1 />
     <vuex2 />
@@ -22,6 +22,11 @@ import { mapState } from 'vuex';
 
 export default {
   name: 'app',
+  data() {
+    return {
+      payload: "passed in value",
+    };
+  },
   computed: mapState(['status']),
   components: {
     Simple,
@@ -32,7 +37,7 @@ export default {
   },
   mounted() {
     console.log(`App MOUNTED called, status: ${this.status}`);
-    this.$store.dispatch('fetchApi');
+    this.$store.dispatch('fetchApi', this.payload);
   },
 };
 </script>

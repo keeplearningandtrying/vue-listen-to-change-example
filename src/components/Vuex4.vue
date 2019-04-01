@@ -1,7 +1,7 @@
 <template>
-  <h1 v-if="status === 'success'">Success {{ complex.deep }}</h1>
-  <h1 v-else-if="status === 'error'">Error</h1>
-  <h1 v-else>Loading</h1>
+  <h1 v-if="status === 'success'">Vuex4 - Success {{ complex.deep }}</h1>
+  <h1 v-else-if="status === 'error'">Vuex4 - Error</h1>
+  <h1 v-else>Vuex4 - Loading</h1>
 </template>
 
 <script>

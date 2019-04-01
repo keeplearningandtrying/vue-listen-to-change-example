@@ -19,8 +19,10 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    async fetchApi({ commit }) {
+    // https://stackoverflow.com/questions/46097687/vuex-passing-multiple-parameters-to-action
+    async fetchApi({ commit }, test) {
       try {
+        console.log(`store - passed in parameter - ${test}`);
         console.log(`store -  before fetchApi called, status: ${this.state.status}`);
         await api.get();
         console.log(`store - fetchApi called, status: ${this.state.status}`);

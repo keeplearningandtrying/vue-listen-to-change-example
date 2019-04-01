@@ -1,7 +1,7 @@
 <template>
-  <h1 v-if="status === 'success'">Success</h1>
-  <h1 v-else-if="status === 'error'">Error</h1>
-  <h1 v-else>Loading</h1>
+  <h1 v-if="status === 'success'">Vuex1 - Success</h1>
+  <h1 v-else-if="status === 'error'">Vuex1 - Error</h1>
+  <h1 v-else>Vuex1 - Loading</h1>
 </template>
 
 <script>
